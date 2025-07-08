@@ -26,15 +26,16 @@ Este projeto tem como objetivo analisar o comportamento das vendas ao longo do t
 
 - **Análise exploratória (EDA):**
   - Verificação de tendências e ciclos sazonais nas vendas.
-  - Visualizações com matplotlib e seaborn para identificar padrões.
+  - Visualizações com matplotlib e pyplot para identificar padrões.
 
 - **Tratamento de dados:**
   - Conversão de datas e organização da série temporal.
-  - Testes de estacionariedade e transformações quando necessário.
+  - Separação dos dados de treino e teste com sklearn: train_test_split
+  - Utilização de Pipeline de transformações: ColumnTransformer, StandardScaler.
 
 - **Modelagem:**
-  - Uso de modelos como **ARIMA** ou **SARIMA** para previsão.
-  - Análise dos resíduos para validar suposições do modelo.
+  - Uso de modelo Regressão Linear para previsão.
+  - Avaliação do Modelo com métrica RMSE (Root Squared Error) para validar suposições do modelo.
 
 - **Forecast:**
   - Projeção das vendas para períodos futuros.
@@ -57,8 +58,8 @@ Este projeto tem como objetivo analisar o comportamento das vendas ao longo do t
 - **Linguagem:** Python (Jupyter Notebook)
 - **Bibliotecas principais:**
   - pandas, numpy
-  - matplotlib, seaborn
-  - statsmodels (ARIMA / SARIMA)
+  - matplotlib, pyplot
+  - sklearn: metrics, linear models, preprocessing, pipiline.
 
 ---
 
